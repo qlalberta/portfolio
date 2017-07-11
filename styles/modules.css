@@ -1,0 +1,9 @@
+
+#hamburger {
+  display: block;
+  float: right;
+  font-size: 400%;
+}
+
+nav ul {
+  display: none;
