@@ -1,6 +1,6 @@
 
 @media (min-width: 640px) {
-  .icon-menu {
+  #hamburger {
     display: none;
   }
 
