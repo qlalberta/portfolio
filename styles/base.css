@@ -1,7 +1,11 @@
+* {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
 body {
-  line-height: 1.5;
-  color: #313131;
+  color: white;
+  background-color: black;
 }
 
 hr {
@@ -11,26 +15,49 @@ hr {
 
 /*TEXT STYLES
 =======================================*/
+
+h1 {
+  font-size: 500%;
+  font-family:  'Tangerine', cursive;
+  text-align: center;
+  color: yellow;
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 200%;
+  font-family: 'Roboto Mono', monospace;
+}
+
 p {
   font-size: 1em;
+  color: white;
+}
+
+section {
+  border-bottom-style: double;
+  border-color: yellow;
+  padding-bottom: 5%
 }
 
 /*IMAGE STYLES*/
 /*=======================================*/
- img {
-   width: 100%;
+img {
+  max-width: 100%;
 }
 
 /*LINK STYLES
 =======================================*/
 a, a:link, a:active {
   text-decoration: none;
-  color: rgb(19, 22, 23);
+  color: white;
 }
 
 a:hover, a:focus {
-  color: rgb(44, 35, 142);
+  color: rgb(129, 125, 40);
 }
 
 a:visited {
+  /*color: rgb(224, 227, 233);*/
 }
