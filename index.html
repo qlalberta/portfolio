@@ -3,36 +3,40 @@
 <head>
   <title>From genetic code to binary code</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="vendor/normalize.css">
-  <link rel="stylesheet" href="styles/icons.css">
+  <link rel="stylesheet" type="text/css"  href="vendor/normalize.css">
+  <link rel="stylesheet" href="vendor/icons.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link rel="stylesheet" href="styles/state.css">
   <link rel="stylesheet" href="styles/theme.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet">
 </head>
 <body>
   <header>
-    <nav>
-      <div id="hamburger"><i class="icon-menu"></i></div>
-      <ul class='nav-ul'>
-        <li><a href="#"> Projects</a></li>
-        <li><a href="#" > Skills</a></li>
-        <li><a href="#"> About</a></li>
+    <nav id="nav" class="row">
+      <div id="hamburger" class="icon-menu"></div>
+      <ul class="nav-ul column col-12">
+        <li><a href="#about"> About</a></li>
+        <li><a href="#skills" > Skills</a></li>
+        <li><a href="#project"> Projects</a></li>
       </ul>
     </nav>
   </header>
   <main>
-      <header>
-        <h1>Hi, I'm Quinn</h1>
-        <p>from genetic code to binary code</p>
-      </header>
+      <div class="row">
+        <h1 class="column col-12">Hi, I'm Quinn</h1>
+      </div>
+      <div class="row">
+        <p id="center" class="column col-12">from genetic code to binary code</p>
+      </div>
       <section>
-        <h2>Projects</h2>
-        <p>Cookie Stand</p><img src="image/cookie.png">
+        <h2 id="project">Projects</h2>
+        <div class="row">
+        <p>Emoji Slots</p><a href="https://alexithymiastudios.github.io/alexi-slots/">"<img src="image/heart_eyes.png"></a>
       </section>
       <section>
-        <h2>Skills</h2>
+        <h2 id="skills">Skills</h2>
         <ul>
           <li>Javascript</li>
           <li>HTML</li>
@@ -40,7 +44,7 @@
         </ul>
       </section>
       <section>
-        <h2>About me</h2>
+        <h2 id="about">About me</h2>
       </section>
   </main>
   <footer>

@@ -5,5 +5,31 @@
   font-size: 400%;
 }
 
+#nav {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
 nav ul {
   display: none;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+nav li {
+  float: right;
+  font-size: 150%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#center {
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Roboto Mono', monospace;
+  border-bottom-style: double;
+  border-color: yellow;
+  padding-bottom: 5%
+}
