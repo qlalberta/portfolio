@@ -6,10 +6,16 @@
   font-size: 400%;
 }
 
-/*#hamburger:hover {
-  display:none;
-}*/
+#linkedin {
+  font-size: 200%;
+  text-align: right;
+  margin-left: 45%;
+}
 
+#github {
+  font-size: 200%;
+  text-align: right;
+}
 
 #nav {
   border: 0;
@@ -38,4 +44,9 @@ nav li {
   border-bottom-style: double;
   border-color: yellow;
   padding-bottom: 5%
+}
+
+#centertext {
+  text-align: center;
+  font-size: 150%;
 }
