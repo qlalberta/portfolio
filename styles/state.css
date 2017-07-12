@@ -1,6 +1,7 @@
 
 @media (min-width: 640px) {
   #hamburger {
+    color: white;
     display: none;
   }
 

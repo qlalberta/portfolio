@@ -1,13 +1,17 @@
+* {
+  margin-left: 2%;
+  margin-right: 2%;
+}
 
 body {
-  background-color: black;
   color: white;
+  background-color: black;
 }
-/*
+
 hr {
   margin: 1em;
   width: 80%;
-}*/
+}
 
 /*TEXT STYLES
 =======================================*/
