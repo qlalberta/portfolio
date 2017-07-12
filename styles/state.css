@@ -1,0 +1,16 @@
+
+@media (min-width: 640px) {
+  #hamburger {
+    color: white;
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 2%;
+  }
