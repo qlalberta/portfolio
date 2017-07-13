@@ -24,6 +24,11 @@
   color: white;
 }
 
+#projectName {
+    font-size: 150%;
+    font-family: 'Roboto Mono', monospace;
+}
+
 nav ul {
   display: none;
   padding: 0;
