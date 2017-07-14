@@ -30,15 +30,17 @@
       </div>
       <section id="projects" class="tab-content">
         <h2>Project</h2>
-        <article class="template">
-          <header>
-            <div>
-              <a id="projectName" href=""></a>
-              <p></p>
-              <img>
-            </div>
-          </header>
-        </article>
+        <script type="text/x-handlebars-template" id="handlebarsTemplate">
+          <article>
+            <header>
+              <div>
+                <address><a href="{{projectUrl}}">{{name}}</a></address>
+                <img src="{{imagePath}}">
+              </div>
+            </header>
+            <section class="project-content">{{{content}}}</section>
+          </article>
+        </script>
       </section>
       <section id="skills" class="tab-content">
         <h2>Skills</h2>
@@ -61,6 +63,7 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="styles/menu.js"></script>
   <script src="scripts/projectData.js"></script>
   <script src="scripts/project.js"></script>
