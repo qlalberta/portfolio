@@ -17,6 +17,7 @@ h1 {
   text-align: center;
   color: yellow;
   margin-top: 5%;
+  margin-left: 2%;
   margin-bottom: 0;
 }
 
@@ -26,7 +27,7 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -34,6 +35,12 @@ section {
   border-bottom-style: double;
   border-color: yellow;
   padding-bottom: 5%
+}
+
+address {
+  font-size: 120%;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 2%;
 }
 
 /*IMAGE STYLES*/
