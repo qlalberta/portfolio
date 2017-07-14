@@ -44,15 +44,11 @@ img {
 
 /*LINK STYLES
 =======================================*/
-a, a:link, a:active {
-  text-decoration: none;
+a, a:link {
   color: white;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
   color: yellow;
-}
-
-a:visited {
-  color: rgb(224, 227, 233);
 }
