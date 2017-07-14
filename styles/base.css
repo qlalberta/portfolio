@@ -8,11 +8,6 @@ body {
   background-color: black;
 }
 
-hr {
-  margin: 1em;
-  width: 80%;
-}
-
 /*TEXT STYLES
 =======================================*/
 
@@ -55,9 +50,9 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: rgb(129, 125, 40);
+  color: yellow;
 }
 
 a:visited {
-  /*color: rgb(224, 227, 233);*/
+  color: rgb(224, 227, 233);
 }
