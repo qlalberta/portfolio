@@ -8,11 +8,6 @@ body {
   background-color: black;
 }
 
-hr {
-  margin: 1em;
-  width: 80%;
-}
-
 /*TEXT STYLES
 =======================================*/
 
@@ -49,15 +44,11 @@ img {
 
 /*LINK STYLES
 =======================================*/
-a, a:link, a:active {
-  text-decoration: none;
+a, a:link {
   color: white;
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-  color: rgb(129, 125, 40);
-}
-
-a:visited {
-  /*color: rgb(224, 227, 233);*/
+  color: yellow;
 }
