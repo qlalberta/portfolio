@@ -12,12 +12,12 @@
 </head>
 <body>
   <header>
-    <nav id="nav" class="row">
+    <nav class="row" class = "main-nav">
       <span id="hamburger" class="icon-menu"></span>
       <ul id="menu" class="nav-ul column col-12">
-        <li><a href="#about"> About</a></li>
-        <li><a href="#skills"> Skills</a></li>
-        <li><a href="#project"> Projects</a></li>
+        <li><a data-content="about" href="#about"> About</a></li>
+        <li><a data-content="skills" href="#skills"> Skills</a></li>
+        <li><a data-content="projects" href="#project"> Projects</a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +28,7 @@
       <div class="row">
         <p id="center" class="column col-12">from genetic code to binary code</p>
       </div>
-      <section id="projects">
+      <section id="projects" class="data-content">
         <h2>Project</h2>
         <article class="template">
           <header>
@@ -40,7 +40,7 @@
           </header>
         </article>
       </section>
-      <section>
+      <section class="data-content">
         <h2 id="skills">Skills</h2>
         <ul>
           <li>Javascript</li>
@@ -48,7 +48,7 @@
           <li>CSS</li>
         </ul>
       </section>
-      <section>
+      <section class="data-content">
         <h2 id="about">About me</h2>
         <p id="centertext">Let's get in touch.</p>
         <a href="https://www.linkedin.com/in/qinliuql"><span id="linkedin" class="icon-linkedin"></span></a>

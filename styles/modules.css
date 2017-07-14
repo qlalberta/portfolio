@@ -40,6 +40,7 @@ nav li {
   float: right;
   font-size: 150%;
   font-family: 'Roboto Mono', monospace;
+  margin-right: 2%;
 }
 
 #center {
@@ -56,6 +57,12 @@ nav li {
   font-size: 150%;
 }
 
+hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: outset;
+  border-width: 1px;
+}
 
 @media only screen and (min-width: 640px) {
   #hamburger {
