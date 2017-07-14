@@ -12,12 +12,12 @@
 </head>
 <body>
   <header>
-    <nav id="nav" class="row">
+    <nav class="row" class = "main-nav">
       <span id="hamburger" class="icon-menu"></span>
-      <ul id="menu" class="nav-ul column col-12">
-        <li><a href="#about"> About</a></li>
-        <li><a href="#skills"> Skills</a></li>
-        <li><a href="#project"> Projects</a></li>
+      <ul id="menu" class="column col-12">
+        <li><a class="tab" data-content="about" href="#"> About</a></li>
+        <li><a class="tab" data-content="skills" href="#"> Skills</a></li>
+        <li><a class="tab" data-content="projects" href="#"> Projects</a></li>
       </ul>
     </nav>
   </header>
@@ -28,7 +28,7 @@
       <div class="row">
         <p id="center" class="column col-12">from genetic code to binary code</p>
       </div>
-      <section id="projects">
+      <section id="projects" class="tab-content">
         <h2>Project</h2>
         <article class="template">
           <header>
@@ -40,16 +40,16 @@
           </header>
         </article>
       </section>
-      <section>
-        <h2 id="skills">Skills</h2>
+      <section id="skills" class="tab-content">
+        <h2>Skills</h2>
         <ul>
           <li>Javascript</li>
           <li>HTML</li>
           <li>CSS</li>
         </ul>
       </section>
-      <section>
-        <h2 id="about">About me</h2>
+      <section id="about" class="tab-content">
+        <h2>About me</h2>
         <p id="centertext">Let's get in touch.</p>
         <a href="https://www.linkedin.com/in/qinliuql"><span id="linkedin" class="icon-linkedin"></span></a>
         <a href="https://github.com/qlalberta"><span  id="github" class="icon-github"></span></a>
@@ -64,5 +64,6 @@
   <script src="styles/menu.js"></script>
   <script src="scripts/projectData.js"></script>
   <script src="scripts/project.js"></script>
+  <script src="scripts/projectView.js"></script>
 </body>
 </html>
