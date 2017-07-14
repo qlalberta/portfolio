@@ -5,7 +5,7 @@ var rawData= [
     name: 'Emoji Slots',
     imagePath: 'image/heart_eyes.png',
     projectUrl: 'https://alexithymiastudios.github.io/alexi-slots/',
-    content: '<p>a game for entertaining people</p>'
+    content: '<p>an entertaining game which also has the potential to help people suffering from alexithymia</p>'
   },
   {
     name: 'Cookie Stand',
@@ -15,7 +15,7 @@ var rawData= [
   },
   {
     name: 'About me',
-    imagePath: 'image/about_me.png',
+    imagePath: 'image/about_me.jpg',
     projectUrl: 'https://github.com/qlalberta/cookie-stand',
     content: '<p>my personal website</p>'
   },

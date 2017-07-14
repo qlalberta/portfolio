@@ -1,15 +1,9 @@
-* {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
+/*TEXT STYLES
+=======================================*/
 body {
   color: white;
   background-color: black;
 }
-
-/*TEXT STYLES
-=======================================*/
 
 h1 {
   font-size: 500%;
