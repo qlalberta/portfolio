@@ -1,32 +1,27 @@
-* {
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
+/*TEXT STYLES
+=======================================*/
 body {
   color: white;
   background-color: black;
 }
 
-/*TEXT STYLES
-=======================================*/
-
 h1 {
-  font-size: 500%;
+  font-size: 3.998em;
   font-family:  'Tangerine', cursive;
   text-align: center;
   color: yellow;
   margin-top: 5%;
+  margin-left: 2%;
   margin-bottom: 0;
 }
 
 h2 {
-  font-size: 200%;
+  font-size: 1.999em;
   font-family: 'Roboto Mono', monospace;
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.5em;
   color: white;
 }
 
@@ -34,6 +29,12 @@ section {
   border-bottom-style: double;
   border-color: yellow;
   padding-bottom: 5%
+}
+
+address {
+  font-size: 120%;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 2%;
 }
 
 /*IMAGE STYLES*/
