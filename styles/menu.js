@@ -9,8 +9,9 @@ $(function() {
 });
 
 $(function() {
-  $('about').on ('click', function() {
-    $('nav ul').hide();
+  $('nav button').on ('click', function() {
     $('#hamburger').show();
+    $('nav ul').hide();
+    $('nav button').hide();
   });
 });
