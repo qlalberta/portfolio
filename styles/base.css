@@ -25,10 +25,10 @@ p {
   color: white;
 }
 
-section {
-  border-bottom-style: double;
+#skills, #about {
+  border-top-style: double;
   border-color: yellow;
-  padding-bottom: 5%
+  margin-right: 2%;
 }
 
 address {
@@ -41,6 +41,8 @@ address {
 /*=======================================*/
 img {
   max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 /*LINK STYLES

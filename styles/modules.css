@@ -57,6 +57,7 @@ nav button {
   font-family: 'Roboto Mono', monospace;
   border-bottom-style: double;
   border-color: yellow;
+  margin-right:1%;
   padding-bottom: 5%
 }
 
@@ -71,6 +72,10 @@ hr {
   border-style: outset;
   border-width: 0.5px;
   color: white;
+}
+
+.tab-content {
+  clear: left;
 }
 
 @media only screen and (min-width: 640px) {
@@ -92,4 +97,13 @@ hr {
   nav button {
     display: none;
   }
+  hr {
+    display: none;
+  }
+
+  #eachProject {
+    width: 28%;
+    float: left;
+  }
+
 }
