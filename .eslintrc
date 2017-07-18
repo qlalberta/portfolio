@@ -6,6 +6,7 @@
     "page": true,
     "$": true,
     "marked": true,
+    "projectData": true,
     "hljs": true
   },
   "extends": "eslint:recommended",
