@@ -22,4 +22,4 @@ $(function() {
 
 $(function() {
   $('address').css('text-align', 'center')
-};
+});
