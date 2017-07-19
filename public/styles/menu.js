@@ -6,7 +6,7 @@ $(function() {
     $('#hamburger').hide();
     $('nav ul').show();
     $('nav button').show();
-    $('nav ul').css('list-style', 'none')
+    $('nav ul').css('list-style', 'none');
   });
 });
 
@@ -18,8 +18,4 @@ $(function() {
     $('nav ul').hide();
     $('nav button').hide();
   });
-});
-
-$(function() {
-  $('address').css('text-align', 'center')
 });

@@ -1,12 +1,18 @@
-/*TEXT STYLES
-=======================================*/
+* {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
 body {
   color: white;
   background-color: black;
 }
 
+/*TEXT STYLES
+=======================================*/
+
 h1 {
-  font-size: 3.998em;
+  font-size: 500%;
   font-family:  'Tangerine', cursive;
   text-align: center;
   color: yellow;
@@ -16,34 +22,25 @@ h1 {
 }
 
 h2 {
-  font-size: 1.999em;
+  font-size: 200%;
   font-family: 'Roboto Mono', monospace;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   color: white;
 }
 
-#skills, #about {
-  border-top-style: double;
+section {
+  border-bottom-style: double;
   border-color: yellow;
-  margin-right: 6%;
-}
-
-address {
-  font-size: 120%;
-  font-family: 'Roboto Mono', monospace;
-  margin-bottom: 2%;
-  text-align: center;
+  padding-bottom: 5%
 }
 
 /*IMAGE STYLES*/
 /*=======================================*/
 img {
   max-width: 100%;
-  height: auto;
-  display: block;
 }
 
 /*LINK STYLES
