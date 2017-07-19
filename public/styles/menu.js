@@ -19,3 +19,7 @@ $(function() {
     $('nav button').hide();
   });
 });
+
+$(function() {
+  $('address').css('text-align', 'center')
+};
