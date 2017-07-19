@@ -1,0 +1,109 @@
+#hamburger {
+  color: white;
+  display: block;
+  float: right;
+  font-size: 400%;
+}
+
+#linkedin {
+  font-size: 200%;
+  text-align: right;
+  margin-left: 45%;
+}
+
+#github {
+  font-size: 200%;
+  text-align: right;
+}
+
+#nav {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+#projectName {
+    font-size: 150%;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav ul {
+  display: none;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+nav li {
+  float: right;
+  font-size: 150%;
+  font-family: 'Roboto Mono', monospace;
+  margin-right: 2%;
+}
+
+nav button {
+  display: block;
+  padding: 0;
+  border: 0;
+  margin: 0
+  font-size: 120%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#center {
+  text-align: center;
+  font-size: 100%;
+  font-family: 'Roboto Mono', monospace;
+  border-bottom-style: double;
+  border-color: yellow;
+  margin-right: 0%;
+  padding-bottom: 5%
+}
+
+#centertext {
+  text-align: center;
+  font-size: 150%;
+}
+
+hr {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-style: outset;
+  border-width: 0.5px;
+  color: white;
+}
+
+.tab-content {
+  clear: left;
+}
+
+@media only screen and (min-width: 640px) {
+  #hamburger {
+    color: white;
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+    float: right;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 2%;
+  }
+
+  nav button {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+
+  #eachProject {
+    width: 28%;
+    float: left;
+  }
+
+}

@@ -1,0 +1,57 @@
+/*TEXT STYLES
+=======================================*/
+body {
+  color: white;
+  background-color: black;
+}
+
+h1 {
+  font-size: 3.998em;
+  font-family:  'Tangerine', cursive;
+  text-align: center;
+  color: yellow;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.999em;
+  font-family: 'Roboto Mono', monospace;
+}
+
+p {
+  font-size: 1.5em;
+  color: white;
+}
+
+#skills, #about {
+  border-top-style: double;
+  border-color: yellow;
+  margin-right: 6%;
+}
+
+address {
+  font-size: 120%;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 2%;
+}
+
+/*IMAGE STYLES*/
+/*=======================================*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*LINK STYLES
+=======================================*/
+a, a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: yellow;
+}

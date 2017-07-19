@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>From genetic code to binary code</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css"  href="vendor/normalize.css">
+  <link rel="stylesheet" href="vendor/icons.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/modules.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="row" class = "main-nav">
+      <span id="hamburger" class="icon-menu"></span>
+      <ul id="menu" class="column col-12">
+        <li><a class="tab" data-content="about" href="#"> About</a></li>
+        <li><a class="tab" data-content="skills" href="#"> Skills</a></li>
+        <li><a class="tab" data-content="projects" href="#"> Projects</a></li>
+      </ul>
+      <button><strong>Back</strong></button>
+    </nav>
+  </header>
+  <main>
+      <div class="row">
+        <h1 class="column col-11">Hi, I'm Quinn</h1>
+      </div>
+      <div class="row">
+        <p id="center" class="column col-11">from genetic code to binary code</p>
+      </div>
+      <section id="projects" class="tab-content">
+        <h2>Project</h2>
+        <script type="text/x-handlebars-template" id="handlebarsTemplate">
+          <article id="eachProject">
+            <header>
+              <div>
+                <address><a href="{{projectUrl}}">{{name}}</a></address>
+                <img src="{{imagePath}}">
+              </div>
+            </header>
+            <div class="project-content">{{{content}}}</div>
+            <hr/>
+          </article>
+        </script>
+      </section>
+      <div class="row">
+      <section id="skills" class="tab-content" class="column col-11">
+        <h2>Skills</h2>
+        <ul>
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </section>
+      </div>
+      <div class="row">
+      <section id="about" class="tab-content" class="column col-11">
+        <h2>About me</h2>
+        <p id="centertext">Let's get in touch.</p>
+        <a href="https://www.linkedin.com/in/qinliuql"><span id="linkedin" class="icon-linkedin"></span></a>
+        <a href="https://github.com/qlalberta"><span  id="github" class="icon-github"></span></a>
+      </section>
+      </div>
+  </main>
+  <footer>
+  </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script src="/styles/menu.js"></script>
+  <script src="/scripts/project.js"></script>
+  <script src="/scripts/projectView.js"></script>
+  <script>
+  Project.retrieveAllProject();
+  </script>
+</html>
