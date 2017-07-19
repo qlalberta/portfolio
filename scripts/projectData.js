@@ -1,6 +1,7 @@
 'use strict';
 
-var rawData= [
+/* eslint-disable no-unused-vars */
+var rawData = [
   {
     name: 'Emoji Slots',
     imagePath: 'image/heart_eyes.png',
