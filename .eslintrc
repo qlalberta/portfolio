@@ -1,12 +1,11 @@
 {
   "globals" : {
-    "projectData": true,
+    "rawData": true,
     "app": true,
     "Handlebars": true,
     "page": true,
     "$": true,
     "marked": true,
-    "projectData": true,
     "hljs": true
   },
   "extends": "eslint:recommended",
