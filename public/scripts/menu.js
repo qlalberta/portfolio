@@ -5,11 +5,9 @@ $(function() {
     e.preventDefault();
     $('#hamburger').hide();
     $('nav ul').show();
-    $('nav button').show();
-    $('nav ul').css('list-style', 'none');
+    $('nav ul').css('list-style', 'none')
   });
 });
-
 
 $(function() {
   $('nav button').on ('click', function(e) {

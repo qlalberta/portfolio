@@ -24,8 +24,8 @@ Project.loadAllProject = function(projectData) {
 }
 
 Project.retrieveAllProject = function() {
-  if (localStorage.projectData) {
-    Project.loadAllProject(JSON.parse(localStorage.getItem('projectdata')));
+  if (localStorage.projectdata) {
+    Project.loadAllProject(JSON.parse(localStorage.getItem('data')));
   } else {
     var path = '../data/project.json';
     $.get(path).then(function functionSuccess(data) {

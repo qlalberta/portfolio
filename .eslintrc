@@ -1,6 +1,6 @@
 {
   "globals" : {
-    "rawData": true,
+    "projectData": true,
     "app": true,
     "Handlebars": true,
     "page": true,
