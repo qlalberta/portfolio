@@ -17,3 +17,15 @@ $(function() {
     $('nav button').hide();
   });
 });
+
+$(function() {
+  $('#stats').hide();
+  $('#projects h2').hover(function(e){
+    e.preventDefault();
+    $('#stats').fadeIn('fast');
+  });
+  $('#projects h2').mouseleave(function(e){
+    e.preventDefault();
+    $('#stats').fadeOut('fast');
+  });
+});

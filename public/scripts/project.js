@@ -21,8 +21,6 @@ Project.loadAllProject = function(projectData) {
   })
 }
 
-
-
 Project.retrieveAllProject = function() {
   if (localStorage.projectData) {
     Project.loadAllProject(JSON.parse(localStorage.getItem('projectdata')));
