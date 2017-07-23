@@ -8,8 +8,6 @@ function Project (projectDataObj) {
   this.content = projectDataObj.content;
 }
 
-Project.all = [];
-
 Project.prototype.toHtml = function() {
   var handlebarsTemplateString = $('#handlebarsTemplate').html();
   var compiled = Handlebars.compile(handlebarsTemplateString);
@@ -22,6 +20,8 @@ Project.loadAllProject = function(projectData) {
     projects.push(new Project(projectObject));
   })
 }
+
+
 
 Project.retrieveAllProject = function() {
   if (localStorage.projectData) {

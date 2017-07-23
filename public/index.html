@@ -9,6 +9,18 @@
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet">
+  <script type="text/x-handlebars-template" id="handlebarsTemplate">
+    <article id="eachProject">
+      <header>
+        <div>
+          <address><a href="{{projectUrl}}">{{name}}</a></address>
+          <img src="{{imagePath}}">
+        </div>
+      </header>
+      <div class="project-content">{{{content}}}</div>
+      <hr/>
+    </article>
+  </script>
 </head>
 <body>
   <header>
@@ -31,18 +43,6 @@
       </div>
       <section id="projects" class="tab-content">
         <h2>Project</h2>
-        <script type="text/x-handlebars-template" id="handlebarsTemplate">
-          <article id="eachProject">
-            <header>
-              <div>
-                <address><a href="{{projectUrl}}">{{name}}</a></address>
-                <img src="{{imagePath}}">
-              </div>
-            </header>
-            <div class="project-content">{{{content}}}</div>
-            <hr/>
-          </article>
-        </script>
       </section>
       <div class="row">
       <section id="skills" class="tab-content" class="column col-11">
