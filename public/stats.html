@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
-    <h2>Total project number:</h2>
-    <h2>Project Titles:</h2>
+    <section>
+      <h2 id="stats">Total word of project content: </h2>
+    </section>
     <script
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -21,5 +22,8 @@
     <script src="/scripts/menu.js"></script>
     <script src="/scripts/project.js"></script>
     <script src="/scripts/projectView.js"></script>
+    <script>
+    Project.initStatsPage();
+    </script>
   </body>
 </html>

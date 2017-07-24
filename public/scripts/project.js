@@ -42,3 +42,19 @@ Project.retrieveAllProject = function() {
     });
   }
 }
+
+Project.reduceAllProject = function() {
+  Project.loadAllProject(JSON.parse(localStorage.getItem('projectData')));
+  var count = projects.map(function(project) {
+    return project.content.length;
+  }).reduce(function(sum,value){
+    return sum + value;
+  }, 0)
+  return count;
+};
+
+Project.initStatsPage = function() {
+  var span = document.createElement('span');
+  $('#stats').append(span);
+  span.textContent = Project.reduceAllProject();
+};
