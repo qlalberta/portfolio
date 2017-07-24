@@ -16,28 +16,29 @@ Project.prototype.toHtml = function() {
 };
 
 Project.loadAllProject = function(projectData) {
-  projectData.forEach(function(projectObject) {
-    projects.push(new Project(projectObject));
-  })
-}
-
-Project.mapAllProject = func
+  projects = projectData.map(function(ele) {
+    return new Project(ele);
+  });
+};
 
 Project.retrieveAllProject = function() {
   if (localStorage.projectData) {
-    Project.loadAllProject(JSON.parse(localStorage.getItem('projectdata')));
+    Project.loadAllProject(JSON.parse(localStorage.getItem('projectData')));
+    projects.forEach(function(project) {
+      $('#projects').append(project.toHtml());
+    });
   } else {
     var path = '../data/project.json';
     $.get(path).then(function functionSuccess(data) {
       var stringfiedData = JSON.stringify(data);
-      localStorage.setItem('data', stringfiedData);
-      var parsedData = JSON.parse(stringfiedData)
+      localStorage.setItem('projectData', stringfiedData);
+      var parsedData = JSON.parse(stringfiedData);
       Project.loadAllProject(parsedData);
       projects.forEach(function(project) {
         $('#projects').append(project.toHtml());
       });
     }, function functionError(err) {
-      console.err(err);
+      console.error(err);
     });
   }
 }
