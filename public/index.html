@@ -25,9 +25,9 @@
     <nav class="row" class = "main-nav">
       <span id="hamburger" class="icon-menu"></span>
       <ul id="menu" class="column col-12">
-        <li><a class="tab" data-content="about" href="#"> About</a></li>
-        <li><a class="tab" data-content="skills" href="#"> Skills</a></li>
-        <li><a class="tab" data-content="projects" href="#"> Projects</a></li>
+        <li><a class="tab" data-content="about" href="/about"> About</a></li>
+        <li><a class="tab" data-content="skills" href="/skills"> Skills</a></li>
+        <li><a class="tab" data-content="projects" href="/projects"> Projects</a></li>
       </ul>
       <button><strong>Back</strong></button>
     </nav>
@@ -71,11 +71,13 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  <script src="/scripts/menu.js"></script>
-  <script src="/scripts/project.js"></script>
-  <script src="/scripts/projectView.js"></script>
-  <script>
-  Project.retrieveAllProject();
-  </script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="/scripts/model/project.js"></script>
+    <script src="/scripts/controller/aboutController.js"></script>
+    <script src="/scripts/controller/skillController.js"></script>
+    <script src="/scripts/controller/projectController.js"></script>
+    <script src="/scripts/controller/routes.js"></script>
+  <script src="/scripts/view/projectView.js"></script>
+  <script>app.Project.retrieveAllProject();</script>
 </body>
 </html>

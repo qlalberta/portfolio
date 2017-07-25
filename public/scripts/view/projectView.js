@@ -1,13 +1,27 @@
 'use strict';
 
-var projectView = {};
-(function () {
-  $('.tab').on('click', function(e) {
+$(function() {
+  $('#hamburger').on ('click', function(e) {
     e.preventDefault();
-    $('.tab-content').hide();
-    $('#' + $(this).attr('data-content')).show();
-    $('#skills, #about').css('border-color','black');
+    $('#hamburger').hide();
+    $('nav ul').show();
+    $('nav ul').css('list-style', 'none')
   });
+});
 
-  $('.main-nav .tab:first').click();
-})(projectView);
+$(function() {
+  $('nav button').on ('click', function(e) {
+    e.preventDefault();
+    $('#hamburger').show();
+    $('nav ul').hide();
+    $('nav button').hide();
+  });
+});
+
+$(function() {
+  $('#stats a').hide();
+  $('#projects h2').hover(function(e){
+    e.preventDefault();
+    $('#stats a').fadeIn('fast');
+  });
+});
