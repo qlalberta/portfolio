@@ -25,3 +25,10 @@ $(function() {
     $('#stats a').fadeIn('fast');
   });
 });
+
+// var app = app || {};
+// (function(module) {
+//   const projectView = {};
+//   app.Project.retrieveAllProject();
+//   module.projectView = projectView;
+// })(app);
