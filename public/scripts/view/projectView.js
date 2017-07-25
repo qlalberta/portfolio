@@ -25,3 +25,10 @@ $(function() {
     $('#stats a').fadeIn('fast');
   });
 });
+
+$(function() {
+  $('.home').on ('click', function(e){
+    e.preventDefault();
+    window.location.href='/index.html'
+  });
+});
