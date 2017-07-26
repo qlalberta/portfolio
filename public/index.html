@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet">
   <script type="text/x-handlebars-template" id="handlebarsTemplate">
     <article id="eachProject">
         <div>
@@ -22,11 +22,11 @@
   <script type="text/x-handlebars-template" id="repoTemplate">
         {{#each repos}}
           <li>
-            <h3>{{this.name}}</h3>
+            <h4>{{this.name}}</h4>
             <a href="{{this.url}}">{{this.url}}</a>
           </li>
         {{/each}}
-      </script>
+  </script>
 </head>
 <body>
   <header>
@@ -36,6 +36,7 @@
         <li><a class="tab" data-content="about" href="/about"> About</a></li>
         <li><a class="tab" data-content="skills" href="/skills"> Skills</a></li>
         <li><a class="tab" data-content="projects" href="/projects"> Projects</a></li>
+        <li><a class="tab" data-content="home" href="/"> Home</a></li>
       </ul>
       <button><strong>Back</strong></button>
     </nav>
@@ -64,8 +65,8 @@
       <div class="row">
       <section id="about" class="tab-content" class="column col-11">
         <h2>About me</h2>
-      <section id="repos">
-        <h3 href="/repos">The Repos Page</h3>
+      <section>
+        <h3 id="repos" href="/repos">The Repos Page</h3>
           <ul id="repoList"></ul>
         <p id="centertext">Let's get in touch.</p>
         <a href="https://www.linkedin.com/in/qinliuql"><span id="linkedin" class="icon-linkedin"></span></a>
@@ -81,17 +82,17 @@
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-  <script src="/scripts/model/project.js"></script>
-  <script src="/scripts/model/githubToken.js"></script>
-
-  <script src="/scripts/model/repo.js"></script>
-  <script src="/scripts/view/repoView.js"></script>
-
-  <script src="/scripts/controller/aboutController.js"></script>
-  <script src="/scripts/controller/skillController.js"></script>
-  <script src="/scripts/controller/projectController.js"></script>
-  <script src="/scripts/controller/routes.js"></script>
-  <script src="/scripts/view/projectView.js"></script>
+  <script src="scripts/model/project.js"></script>
+  <script src="scripts/model/githubToken.js"></script>
+  <script src="scripts/model/repo.js"></script>
+  <script src="scripts/view/repoView.js"></script>
+  <script src="scripts/view/projectView.js"></script>
+  <script src="scripts/controller/homeController.js"></script>
+  <script src="scripts/controller/aboutController.js"></script>
+  <script src="scripts/controller/skillController.js"></script>
+  <script src="scripts/controller/projectController.js"></script>
+  <script src="scripts/controller/repoController.js"></script>
+  <script src="scripts/controller/routes.js"></script>
   <script>app.Project.retrieveAllProject()</script>
 </body>
 </html>
