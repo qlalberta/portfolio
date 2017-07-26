@@ -6,6 +6,7 @@
     "page": true,
     "$": true,
     "marked": true,
+    "githubToken": true,
     "hljs": true
   },
   "extends": "eslint:recommended",
