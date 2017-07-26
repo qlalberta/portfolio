@@ -3,8 +3,6 @@
 var app = app || {};
 
 (function (module) {
-  // const repos = {};
-  // repos.all = [];
   module.getRepos = function (callback) {
     $.ajax({
       url: 'https://api.github.com/user/repos',
@@ -15,8 +13,6 @@ var app = app || {};
     })
     .then(
       function (data) {
-        console.log('in repo.js')
-        console.log(data);
         let mappedData = data.map(repo =>({
           name: repo.name,
           url: repo.html_url
@@ -25,5 +21,4 @@ var app = app || {};
       }
     );
   };
-  //  console.log(mappedData)
 })(app)
