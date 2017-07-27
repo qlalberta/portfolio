@@ -1,14 +1,10 @@
 'use strict';
 
-// const pg = require('pg');
 const express = require('express');
 const app = express();
 const proxy = require('express-request-proxy');
 const PORT = process.env.PORT || 3000;
 const githubToken = process.env.GITHUB_TOKEN;
-// const client = new pg.Client(conString);
-// client.connect();
-// client.on('error', err => console.error(err));
 
 app.use(express.static('./public'));
 
