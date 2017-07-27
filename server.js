@@ -1,6 +1,6 @@
 'use strict';
 
-// const pg = require('pg');
+const pg = require('pg');
 const express = require('express');
 const app = express();
 const proxy = require('express-request-proxy');
