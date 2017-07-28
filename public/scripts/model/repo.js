@@ -4,7 +4,7 @@ var app = app || {};
 
 (function (module) {
   module.getRepos = function (callback) {
-    $.get(`/github/user/repos`)
+    $.get(`/github/user/repos?affiliation=owner`)
     .then(
       function (data) {
         let mappedData = data.map(repo =>({
