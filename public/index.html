@@ -9,15 +9,34 @@
   <link rel="stylesheet" href="styles/layout.css">
   <link rel="stylesheet" href="styles/modules.css">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata|Roboto+Mono|Tangerine" rel="stylesheet">
+  <script type="text/x-handlebars-template" id="handlebarsTemplate">
+    <article id="eachProject">
+        <div>
+          <address><a href="{{projectUrl}}">{{name}}</a></address>
+          <img src="{{imagePath}}">
+        </div>
+      <div class="project-content">{{{content}}}</div>
+      <hr/>
+    </article>
+  </script>
+  <script type="text/x-handlebars-template" id="repoTemplate">
+        {{#each repos}}
+          <li>
+            <h3>{{this.name}}</h3>
+            <a href="{{this.url}}">{{this.url}}</a>
+          </li>
+        {{/each}}
+  </script>
 </head>
 <body>
   <header>
     <nav class="row" class = "main-nav">
       <span id="hamburger" class="icon-menu"></span>
       <ul id="menu" class="column col-12">
-        <li><a class="tab" data-content="about" href="#"> About</a></li>
-        <li><a class="tab" data-content="skills" href="#"> Skills</a></li>
-        <li><a class="tab" data-content="projects" href="#"> Projects</a></li>
+        <li><a class="tab" data-content="about" href="/about"> About</a></li>
+        <li><a class="tab" data-content="skills" href="/skills"> Skills</a></li>
+        <li><a class="tab" data-content="projects" href="/projects"> Projects</a></li>
+        <li><a class="tab" data-content="home" href="/"> Home</a></li>
       </ul>
       <button><strong>Back</strong></button>
     </nav>
@@ -31,18 +50,7 @@
       </div>
       <section id="projects" class="tab-content">
         <h2>Project</h2>
-        <script type="text/x-handlebars-template" id="handlebarsTemplate">
-          <article id="eachProject">
-            <header>
-              <div>
-                <address><a href="{{projectUrl}}">{{name}}</a></address>
-                <img src="{{imagePath}}">
-              </div>
-            </header>
-            <div class="project-content">{{{content}}}</div>
-            <hr/>
-          </article>
-        </script>
+        <p id="stats" ><a href="stats.html">Project Stats</a></p>
       </section>
       <div class="row">
       <section id="skills" class="tab-content" class="column col-11">
@@ -57,6 +65,11 @@
       <div class="row">
       <section id="about" class="tab-content" class="column col-11">
         <h2>About me</h2>
+      <section id="repos">
+        <h3 id="repos"><a href="/repos">My github Repos List</a></h3>
+          <ul id="repoList"></ul>
+      </section>
+      <section>
         <p id="centertext">Let's get in touch.</p>
         <a href="https://www.linkedin.com/in/qinliuql"><span id="linkedin" class="icon-linkedin"></span></a>
         <a href="https://github.com/qlalberta"><span  id="github" class="icon-github"></span></a>
@@ -70,10 +83,17 @@
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-  <script src="/scripts/menu.js"></script>
-  <script src="/scripts/project.js"></script>
-  <script src="/scripts/projectView.js"></script>
-  <script>
-  Project.retrieveAllProject();
-  </script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+  <script src="scripts/model/project.js"></script>
+  <script src="scripts/model/repo.js"></script>
+  <script src="scripts/view/repoView.js"></script>
+  <script src="scripts/view/projectView.js"></script>
+  <script src="scripts/controller/homeController.js"></script>
+  <script src="scripts/controller/aboutController.js"></script>
+  <script src="scripts/controller/skillController.js"></script>
+  <script src="scripts/controller/projectController.js"></script>
+  <script src="scripts/controller/repoController.js"></script>
+  <script src="scripts/controller/routes.js"></script>
+  <script>app.Project.retrieveAllProject()</script>
+</body>
 </html>

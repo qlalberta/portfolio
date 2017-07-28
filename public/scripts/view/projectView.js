@@ -17,3 +17,18 @@ $(function() {
     $('nav button').hide();
   });
 });
+
+$(function() {
+  $('#stats a').hide();
+  $('#projects h2').hover(function(e){
+    e.preventDefault();
+    $('#stats a').fadeIn('fast');
+  });
+});
+
+$(function() {
+  $('.home').on ('click', function(e){
+    e.preventDefault();
+    window.location.href='/index.html'
+  });
+});
