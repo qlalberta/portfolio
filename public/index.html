@@ -22,7 +22,7 @@
   <script type="text/x-handlebars-template" id="repoTemplate">
         {{#each repos}}
           <li>
-            <h3>{{this.name}}</h3>
+            <h3><a href="/repos/{{this.name}}">{{this.name}}</a></h3>
             <a href="{{this.url}}">{{this.url}}</a>
           </li>
         {{/each}}

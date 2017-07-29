@@ -11,7 +11,7 @@ var app = app || {};
           name: repo.name,
           url: repo.html_url
         }));
-        ctx.repo = mappedData;
+        ctx.repos = mappedData;
         next();
       }
     );
@@ -24,7 +24,7 @@ var app = app || {};
     })
     .then(
       function (data) {
-        ctx.repo = [data];
+        ctx.repos = [data];
         next();
       }
     );
